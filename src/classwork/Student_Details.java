@@ -143,7 +143,5 @@ public class Student_Details {
 		 }while(true);
 		
 		
-		 
-	}
 }
 }
