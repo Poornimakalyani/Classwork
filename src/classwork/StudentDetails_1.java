@@ -91,12 +91,7 @@ public class StudentDetails_1 {
 					System.out.println("Invalid choice");
 			}
 			
-		}while(true);
-		
-		
-		
-		
-		
+		}while(true);	
 		
 		
 	}

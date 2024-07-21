@@ -80,10 +80,15 @@ class Movies {
 
 public class MovieTest {
 
-	public static double totalPrice(double ticketPrice, int tickets) {
-		return ticketPrice * tickets;
-
-	}
+	
+	  //we can use this as well instead of getTotalTicketPrice 
+	
+	  public static double totalPrice(double ticketPrice, int tickets)  {
+	  return ticketPrice * tickets;
+	  
+	  
+	  }
+	 
 
 	public static void main(String[] args) {
 		System.out.println("====================first Movie Details============================");
@@ -105,6 +110,9 @@ public class MovieTest {
 		System.out.println("No of Tickets Booked: " + movie1.getNoOfTickets());
 		System.out.println("Remaining Tickets:" + movie1.getRemainingTickets());
 		System.out.println("Total Tickets price:" + movie1.getTotalPrice());
+		
+		
+		
 		System.out.println("====================Second Movie Details============================");
 		Movies movie2 = new Movies();
 		movie2.setMovieName("moni");

@@ -5,12 +5,15 @@ import java.util.Scanner;
 class StudentDetails {
 
 	String studentname;
+	String department;
 	int regnumber;
+	
 
-	StudentDetails(String studentname, int regnumber) {
+	StudentDetails(String studentname,String department, int regnumber) {
 
 		this.studentname = studentname;
 		this.regnumber = regnumber;
+		this.department=department;
 
 	}
 
@@ -18,6 +21,8 @@ class StudentDetails {
 		System.out.println("*****Student details*****");
 		System.out.println("Student Name: " + studentname);
 		System.out.println("Register Number: " + regnumber);
+		System.out.println("Department Name: " + department);
+
 	}
 
 }
@@ -72,10 +77,12 @@ class Percentage {
 	void displayEligibility() {
 		if (percentage > 35) {
 			System.out.println("Eligible for Next Year");
-		} else {
+		} 
+		else {
 			System.out.println("Not Eligible for Next Year");
 		}
 	}
+}
 
 	public class Student_Details {
 
@@ -84,31 +91,35 @@ class Percentage {
 			Scanner scan = new Scanner(System.in);
 
 			System.out.println("Enter Student Name: ");
-			String studentname = scan.next();
-			scan.nextLine();
+			String studentname = scan.nextLine();
+			
+			
+			System.out.println("Enter Student Department: ");
+			String deptname = scan.next();
 
 			System.out.println("Enter Student Registration Number:  ");
 			int regnumber = scan.nextInt();
+			
 
 			System.out.println("Enter Subject1 Marks:  ");
 			int sub1 = scan.nextInt();
 
-			System.out.println("Enter Subject1 Marks:  ");
+			System.out.println("Enter Subject2 Marks:  ");
 			int sub2 = scan.nextInt();
 
-			System.out.println("Enter Subject1 Marks:  ");
+			System.out.println("Enter Subject3 Marks:  ");
 			int sub3 = scan.nextInt();
 
-			System.out.println("Enter Subject1 Marks:  ");
+			System.out.println("Enter Subject4 Marks:  ");
 			int sub4 = scan.nextInt();
 
-			System.out.println("Enter Subject1 Marks:  ");
+			System.out.println("Enter Subject5 Marks:  ");
 			int sub5 = scan.nextInt();
 
-			System.out.println("Enter Subject1 Marks:  ");
+			System.out.println("Enter Subject6 Marks:  ");
 			int sub6 = scan.nextInt();
 
-			StudentDetails sd = new StudentDetails(studentname, regnumber);
+			StudentDetails sd = new StudentDetails(studentname,deptname, regnumber);
 			Subjects sub = new Subjects(sub1, sub2, sub3, sub4, sub5, sub6);
 			Percentage per = new Percentage(sub1, sub2, sub3, sub4, sub5, sub6);
 
@@ -150,4 +161,4 @@ class Percentage {
 			}
 		}
 	}
-}
+
