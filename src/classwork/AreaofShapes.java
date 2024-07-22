@@ -2,6 +2,8 @@ package classwork;
 
 public class AreaofShapes {
 
+	
+	//hello
 	void area_of_square(int a) {
 		int c = a * a;
 		System.out.println("Area of Square:" + c);
